@@ -1,84 +1,62 @@
-# Microservices
 
-This project contains a Vue.js component that displays a data table for managing and viewing product information. It is part of a microservices architecture focusing on **Order Management** and **Inventory Management**.
+#Microservices
+This project features a Vue.js component designed to display a data table for managing and viewing product details. It is part of a microservices architecture focusing on Order Management and Inventory Management.
 
-## Features
+#Features
+Search Functionality: Allows users to search for products by their titles.
+Dynamic Data Table: Displays product information with customizable headers.
+Vuetify Integration: Ensures a cohesive and professional UI using Vuetify components.
+Modular Design: The component is reusable across different parts of the application.
 
-- **Search Functionality**: Users can search products by title.
-- **Data Table**: Dynamically displays product data with headers.
-- **Vuetify Integration**: Utilizes Vuetify components for UI consistency.
-- **Reusable Component**: Modular design for reusability.
 
-## Project Structure
+#Project Structure
+components: Houses Vue components, including ProductsTable.vue.
+pages: Contains application pages like Dashboard.vue and Shop.vue.
+lib: Includes utility files, such as supabase.js.
+plugins: Configurations for plugins, including vuetify.js.
+router: Handles application routing.
+styles: Contains global styling for the project.
 
-- **components**: Contains Vue components, including `ProductsTable.vue`.
-- **pages**: Includes application pages such as `Dashboard.vue` and `Shop.vue`.
-- **lib**: Contains utility files like `supabase.js`.
-- **plugins**: Plugin configurations, including `vuetify.js`.
-- **router**: Application routing configurations.
-- **styles**: Global styles for the project.
+#Installation
 
-## Installation
+git clone https://github.com/kry70/OI-Microservice-System.git
+cd <repository-folder> 
 
-1. Clone the repository:
+Install project dependencies:
+npm install
 
-   ```bash
-   git clone https://github.com/ecatamosa/microservices.git
-   cd <repository-folder>
-   ```
+Start the development server:
+npm run dev  
 
-2. Install dependencies:
+Open your browser and visit http://localhost:8050 to access the application.
 
-   ```bash
-   npm install
-   ```
+Usage
+Go to the "Shop" page to view the Products Table.
+Use the search bar to filter products by their title.
+Interact with the table to manage product details.
+Components Overview
+ProductsTable.vue
+Props:
 
-3. Run the development server:
+products: An array of product data.
+headers: An array of table headers.
+Slots:
 
-   ```bash
-   npm run dev
-   ```
+item.title: Allows customization of how product titles are displayed.
+Key Features:
+Search Bar: Enables filtering products by title.
+Data Table: Displays product information with built-in filtering functionality.
+Technologies Used
+Vue.js
+Vuetify
+Supabase
+Node.js
+Contributions
+Contributions are encouraged! To contribute:
 
-4. Open the application in your browser at `http://localhost:8052`.
-
-## Usage
-
-1. Navigate to the "Shop" page to view the Products Table.
-2. Use the search bar to filter products by their title.
-3. Interact with the table to manage product data.
-
-## Components Overview
-
-### `ProductsTable.vue`
-
-- **Props**:
-  - `products`: Array of product data.
-  - `headers`: Array of table headers.
-
-- **Slots**:
-  - `item.title`: Slot for customizing the display of the product title.
-
-### Key Sections:
-
-- **Search Field**: A text field for searching products.
-- **Data Table**: Displays product data with filtering capabilities.
-
-## Technologies Used
-
-- Vue.js
-- Vuetify
-- Supabase
-- Node.js
-
-## Contributions
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new feature branch.
-3. Commit your changes.
-4. Submit a pull request.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
+Fork the repository.
+Create a feature branch for your changes.
+Commit your updates.
+Open a pull request for review.
+License
+This project is open-source and distributed under the MIT License.
